@@ -1,5 +1,7 @@
 # Claude Code Cookbook
 
+[English](README_en.md) | [中文](README_zh.md) | [한국어](README_ko.md) | [Português](README_pt.md) | [Español](README_es.md) | [日本語](README.md)
+
 Claude Code をもっと便利に使うための設定集です。
 
 細かい確認を省いて自動的に作業を進めてくれるので、本来やりたいことに集中できます。
@@ -161,13 +163,23 @@ flowchart TB
 
 ---
 
-## 導入とカスタマイズ
+## インストール
 
-### 導入手順
+```bash
+# リポジトリをクローン
+git clone https://github.com/wasabeef/claude-code-cookbook.git
+cd claude-code-cookbook
 
-1. **リポジトリをクローン**: `git clone https://github.com/wasabeef/claude-code-cookbook.git ~/.claude`
-2. **クライアントでパスを設定**: Claude のクライアントで、上記ディレクトリのパスを指定します
-3. **パスの確認**: `settings.json` 内のスクリプトパスが環境と一致しているか確認します
+# 言語を指定してインストール
+./scripts/install.sh ja    # 日本語（デフォルト）
+./scripts/install.sh en    # 英語
+./scripts/install.sh ko    # 韓国語
+./scripts/install.sh pt    # ポルトガル語
+./scripts/install.sh zh    # 中国語
+./scripts/install.sh es    # スペイン語
+```
+
+Claude Desktop で Custom Instructions のパスを `~/.claude` に設定すれば完了です。
 
 ### カスタマイズ
 
